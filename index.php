@@ -112,7 +112,7 @@ if (!empty($_GET['dl'])) {
 
     <title> Simple Note </title>
 
-    <link rel="stylesheet" href="//bootswatch.com/flatly/bootstrap.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
