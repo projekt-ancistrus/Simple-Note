@@ -127,7 +127,7 @@ if (!empty($notes->fetchNotes())):
                 <a href="logout.php" class="btn btn-secondary">Logout</a>
             </p>
             <p>
-                <a href="https://github.com/ArtyumX/Simple-Note" target="_new">Simple-Note on Github</a><br>
+                <a href="https://github.com/projekt-ancistrus/Simple-Note" target="_new">Simple-Note on Github</a><br>
                 Copyright © 2017 <a href="https://github.com/ArtyumX">Artyum</a> &middot;
                 Copyright © 2017-2018 <a href="https://malte70.de" rel="me nofollow">malte70</a>
             </p>
