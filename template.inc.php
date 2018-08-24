@@ -75,7 +75,8 @@ if (!empty($notes->fetchNotes())):
                         <tr>
 <?php foreach ($notes as $row): ?>
                             <td>
-                                <small><?= htmlspecialchars(substr($row['title'], 0, 15), ENT_QUOTES, 'UTF-8') ?></small>
+                                <!--<small><?= htmlspecialchars(substr($row['title'], 0, 15), ENT_QUOTES, 'UTF-8') ?></small>-->
+                                <small><?= htmlspecialchars($row['title'], ENT_QUOTES, 'UTF-8') ?></small>
                             </td>
                             <td><?= date('H:i', strtotime($row['created'])) ?></td>
                             <td><?= date('d/m/Y', strtotime($row['created'])) ?></td>
