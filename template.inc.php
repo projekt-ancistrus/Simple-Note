@@ -9,7 +9,8 @@ if (!isset($notes)) die("Do not access this file directly!");
         
         <title> Simple Note </title>
         
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -21,6 +22,7 @@ if (!isset($notes)) die("Do not access this file directly!");
             
             textarea {
                 resize: vertical;    /* allow only vertical stretch */
+                font: .9em "Source Code Pro", monospace;
             }
         </style>
     </head>
@@ -40,7 +42,7 @@ if (!isset($notes)) die("Do not access this file directly!");
                     <input class="form-control" type="text" placeholder="Title" name="title" required>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="5" placeholder="What do you have in mind ?" name="content" autofocus required></textarea>
+                    <textarea class="form-control" rows="12" placeholder="What do you have in mind ?" name="content" autofocus required></textarea>
                 </div>
                 <div class="btn-group pull-right">
                     <button class="btn btn-danger" type="reset"><span class="glyphicon glyphicon-remove"></span> Clear </button>
@@ -98,7 +100,7 @@ if (!empty($notes->fetchNotes())):
                                         <input class="form-control" type="text" placeholder="Title" name="title" value="<?= htmlspecialchars($row['title'], ENT_QUOTES, 'UTF-8') ?>">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="5" placeholder="What do you have in mind ?" name="content" required><?= htmlspecialchars($row['content'], ENT_QUOTES, 'UTF-8') ?></textarea>
+                                        <textarea class="form-control" rows="12" placeholder="What do you have in mind ?" name="content" required><?= htmlspecialchars($row['content'], ENT_QUOTES, 'UTF-8') ?></textarea>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -126,7 +128,7 @@ if (!empty($notes->fetchNotes())):
             <p>
                 <a href="https://github.com/ArtyumX/Simple-Note" target="_new">Simple-Note on Github</a><br>
                 Copyright © 2017 <a href="https://github.com/ArtyumX">Artyum</a> &middot;
-                Copyright © 2017 <a href="https://malte70.de" rel="me nofollow">malte70</a>
+                Copyright © 2017-2018 <a href="https://malte70.de" rel="me nofollow">malte70</a>
             </p>
         </footer>
         
