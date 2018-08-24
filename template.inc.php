@@ -79,7 +79,7 @@ if (!empty($notes->fetchNotes())):
                                 <small><?= htmlspecialchars($row['title'], ENT_QUOTES, 'UTF-8') ?></small>
                             </td>
                             <td><?= date('H:i', strtotime($row['created'])) ?></td>
-                            <td><?= date('d/m/Y', strtotime($row['created'])) ?></td>
+                            <td><?= date('Y-m-d', strtotime($row['created'])) ?></td>
                             <td class="pull-right">
                                 <div class="btn-group">
                                     <a class="btn btn-default btn-xs" title="Edit this note" href="#" data-toggle="modal" data-target="#<?= $row['ID'] ?>"><span class="glyphicon glyphicon-edit"></span></a>
